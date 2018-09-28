@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Hobby's</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 60px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                color: white;
+                padding: 14px 10px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+                /* Change color on hover */
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+
+        /*Customizing table*/
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+            table#t01 tr:nth-child(even) {
+                background-color: rgb(160, 160, 160);
+            }
+
+            table#t01 tr:nth-child(odd) {
+                background-color: white;
+            }
+
+            table#t01 th {
+                background-color: white;
+                width: 50%;
+            }
+
+        .header {
+            background: none;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 53px;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+        .side {
+            flex: 50%;
+            background: linear-gradient( rgba(0, 174, 255, 0.5),rgb(0, 204, 255)),url(Image/BeachPicWindsurfing.jpg);
+            background-size: cover;
+        }
+
+        .main {
+            flex: 50%;
+            background: linear-gradient( rgba(255, 255, 255, 0),rgba(255, 255, 255, 1)),url(Image/GamingBackground.jpg);
+            background-size: cover;
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: rgb(110, 110, 110);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="side" style="padding-right:0px">
+            <div class="header" style="text-align:right">
+                <h1 style="color:black">Hob</h1>
+            </div>
+        </div>
+
+        <div class="main" style="padding-left:0px;">
+            <div class="header" style="text-align:left">
+                <h1>by's</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navbar">
+
+        <a href="https://github.com/lucadijksman/website/blob/master/index.html">Index</a>
+
+        <a href="https://github.com/lucadijksman/website/blob/master/contact.html">Contact</a>
+
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h1>WindSurfing</h1>
+            <p>In my time I've been living in Aruba I've participated in many sports but by far my favourite has been windsurfing.</p>
+            <img src="Image/WindsurfingAruba.jpg" alt="Windsurfing in Aruba" style="width:100%">
+            <p>Here are some of the bigger sails you can use when you're experienced with windsurfing. I loved the bigger sails and smaller board because you get to go so much faster than the beginner equipment.</p>
+            <img src="Image/WindsurfingAruba2.jpg" alt="Beginner windsurfing setup" style="width:100%">
+            <p>In the image above you see a person learning to windsurf with beginner equipment (altough the white board is no longer used).</p>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="main">
+            <h1 style="color:white">Gaming</h1>
+            <p style="color:white">Another favourite pastime I have is Playing games, especially with friends.</p>
+            <img src="Image/Gaming.jpg" alt="Generic gaming photo" width="100%">
+            <p>My favourite game that I like to play and have been playing for a long time is Rocket League.</p>
+            <img src="Image/rocketleagueGame.jpg" alt="The game Rocket League" style="width:100%">
+            <p>I've been playing Rocket League for nearly 3 years now.</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2></h2>
+    </div>
+
+
+
+
+</body>
+</html>
